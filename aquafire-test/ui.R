@@ -29,7 +29,7 @@ ui <- fluidPage(
                          
                        ), # End fluidPage
                       
-                      ), # End Tab Panel
+                      ), # End Tab Panel for About page
              
              # Map Bar ----
              navbarMenu("Spatial Analysis", icon = icon("earth"),
@@ -79,7 +79,12 @@ ui <- fluidPage(
 
                                  ), # End tabPanel
 
-                        ), # End navbarMenu for Spatial Analysis
+                        ),  # End navbarMenu for Spatial Analysis
+            navbarMenu("Statistical Analysis", icon = icon("chart-simple"),
+                       
+                       
+                       
+                       )
     
     
   ), # End Navigation Bar
