@@ -80,11 +80,55 @@ ui <- fluidPage(
                                  ), # End tabPanel
 
                         ),  # End navbarMenu for Spatial Analysis
+
             navbarMenu("Statistical Analysis", icon = icon("chart-simple"),
                        
+                       # California Map ----
+                       tabPanel(title = "California statistics",
+                                
+                                # sidebarLayout ----
+#                                  sidebarLayout(
+                                
+                                sidebarPanel(width = 3,
+                                             
+                                             # Put inputs & variables to change here!
+                                             # GDEs, Wildfire Hazard
+                                             "For California statistical analysis inputs"
+                                             
+                                ), 
+#                                  ), # End sidebarLayout ----
+                       ), # End tabPanel
                        
                        
-                       )
+                       mainPanel(leafletOutput(outputId = "leaflet_base")
+                                 
+                       ), # End mainPanel
+                       
+                       tabPanel(title = "Santa Barbara County Statistics",
+                                
+                                # sidebarLayout for county map----
+#                                 sidebarLayout(
+                                
+                                
+                                sidebarPanel(width = 3,
+                                             
+                                             
+                                             # Put inputs & vartiables here
+                                             "For County-level statistical analysis inputs"
+                                             
+                                ),
+#                                 ), # End sidebarLayout
+#                                  position = ("left"),
+                                
+                                mainPanel(
+                                  
+                                  "County Statistical Analysis"
+                                  
+                                ),
+                                
+                       ), # End tabPanel                       
+                       
+                       ), # End navbarMenu for Statistical Analysis
     
     
   ), # End Navigation Bar
