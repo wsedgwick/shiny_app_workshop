@@ -5,7 +5,7 @@ ui <- fluidPage(
       fluidRow(column(6,
                       h1("Aquafire")),
                column(6,
-                      HTML("<a href='https://www.tnc.org/'><img src='tnc_logo.png' align= 'right' height= '60' width = '60' alt='This is The Nature Conservancy logo'/></a>")))),
+                      HTML("<a href='https://www.tnc.org/'><img src='tnc_logo.png' align= 'right' height= '60' width = '180' alt='This is The Nature Conservancy logo'/></a>")))),
   
   # Navigation Bar ----
   navbarPage("",
@@ -26,6 +26,11 @@ ui <- fluidPage(
                          ), # End Background
                          
                          h1("Significance"),
+                         
+                         fluidRow(
+                           column(12, p("This App was designed to display statistical and spatial relationships between Groundwater-Dependent Ecosystems and Wildfires. It may be used as a tool to understand how Groundwater-Dependent Ecosystems.."),
+                           )
+                         ), # End Significance
                          
                        ), # End fluidPage
                       
